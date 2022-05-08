@@ -1,10 +1,11 @@
-echo "Hello World"
+#!/bin/bash
 
-n = 1
 
-while (( n < 10 ))
+n=1
+
+while [ $n -le 10 ]
 do
- echo "Hello world"
- (( n = n +1 ))
 
+    echo "Hello world"
+    (( n++ ))
 done
